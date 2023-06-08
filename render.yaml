@@ -22,9 +22,9 @@
 #     maxmemoryPolicy: noeviction
 
 databases:
-  - name: voteRemoteRails
-    databaseName: postgres
-    user: postgres
+  - name: postgres
+    databaseName: voteRemoteRails
+    ipAllowList: []
 
 services:
   - type: web
