@@ -1,0 +1,185 @@
+  [1m[35m (153.3ms)[0m  [1m[35mCREATE DATABASE "VoteRemoteRails_development" ENCODING = 'unicode'[0m
+  [1m[35m (67.6ms)[0m  [1m[35mCREATE DATABASE "VoteRemoteRails_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:13:18 -0400
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20230608165748_create_elections.rb
+20230608171006_create_voters.rb
+20230608171035_create_votes.rb
+
+
+):
+  
+activerecord (7.0.5) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.5) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.5) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "VoteRemoteRails_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "VoteRemoteRails_test" ENCODING = 'unicode'[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5235245200875776310)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateElections (20230608165748)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "elections" ("id" bigserial primary key, "name" character varying, "ownerDID" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230608165748"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVoters (20230608171006)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "voters" ("id" bigserial primary key, "voterDID" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230608171006"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVotes (20230608171035)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "voter_id" bigint NOT NULL, "elections_id" bigint NOT NULL, "vote" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_40393c889d"
+FOREIGN KEY ("voter_id")
+  REFERENCES "voters" ("id")
+, CONSTRAINT "fk_rails_61fd428d94"
+FOREIGN KEY ("elections_id")
+  REFERENCES "elections" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_votes_on_voter_id" ON "votes" ("voter_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_votes_on_elections_id" ON "votes" ("elections_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230608171035"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-08 17:13:50.622346"], ["updated_at", "2023-06-08 17:13:50.622346"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5235245200875776310)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-08 13:14:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ElectionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering elections/index.html.erb within layouts/application
+  [1m[36mElection Load (0.6ms)[0m  [1m[34mSELECT "elections".* FROM "elections"[0m
+  ↳ app/views/elections/index.html.erb:6
+  Rendered elections/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 233.2ms | Allocations: 101146)
+Completed 200 OK in 249ms (Views: 236.1ms | ActiveRecord: 0.6ms | Allocations: 108285)
+
+
+Started GET "/elections/new" for 127.0.0.1 at 2023-06-08 13:14:05 -0400
+Processing by ElectionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering elections/new.html.erb within layouts/application
+  Rendered elections/_form.html.erb (Duration: 11.4ms | Allocations: 2551)
+  Rendered elections/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2868)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 5082)
+Completed 200 OK in 32ms (Views: 18.8ms | ActiveRecord: 3.0ms | Allocations: 20728)
+
+
+Started POST "/elections" for 127.0.0.1 at 2023-06-08 13:14:19 -0400
+Processing by ElectionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "election"=>{"name"=>"Election 1", "ownerDID"=>"asdflj234234"}, "commit"=>"Create Election"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/elections_controller.rb:27:in `block in create'
+  [1m[36mElection Create (0.7ms)[0m  [1m[32mINSERT INTO "elections" ("name", "ownerDID", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Election 1"], ["ownerDID", "asdflj234234"], ["created_at", "2023-06-08 17:14:19.122501"], ["updated_at", "2023-06-08 17:14:19.122501"]]
+  ↳ app/controllers/elections_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/elections_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/elections/1
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms | Allocations: 2818)
+
+
+Started GET "/elections/1" for 127.0.0.1 at 2023-06-08 13:14:19 -0400
+Processing by ElectionsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mElection Load (0.2ms)[0m  [1m[34mSELECT "elections".* FROM "elections" WHERE "elections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/elections_controller.rb:63:in `set_election'
+  Rendering layout layouts/application.html.erb
+  Rendering elections/show.html.erb within layouts/application
+  Rendered elections/_election.html.erb (Duration: 0.4ms | Allocations: 215)
+  Rendered elections/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1369)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3575)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.5ms | Allocations: 6121)
+
+
+Started GET "/elections" for 127.0.0.1 at 2023-06-08 13:14:21 -0400
+Processing by ElectionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering elections/index.html.erb within layouts/application
+  [1m[36mElection Load (0.3ms)[0m  [1m[34mSELECT "elections".* FROM "elections"[0m
+  ↳ app/views/elections/index.html.erb:6
+  Rendered elections/_election.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered elections/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3055)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 3325)
+
+
+Started GET "/elections/1" for 127.0.0.1 at 2023-06-08 13:14:24 -0400
+Processing by ElectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mElection Load (0.3ms)[0m  [1m[34mSELECT "elections".* FROM "elections" WHERE "elections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/elections_controller.rb:63:in `set_election'
+  Rendering layout layouts/application.html.erb
+  Rendering elections/show.html.erb within layouts/application
+  Rendered elections/_election.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered elections/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 533)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2731)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 3454)
+
+
+Started GET "/elections" for 127.0.0.1 at 2023-06-08 13:14:26 -0400
+Processing by ElectionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering elections/index.html.erb within layouts/application
+  [1m[36mElection Load (0.4ms)[0m  [1m[34mSELECT "elections".* FROM "elections"[0m
+  ↳ app/views/elections/index.html.erb:6
+  Rendered elections/_election.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered elections/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 843)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3049)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 3308)
+
+
